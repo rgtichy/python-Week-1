@@ -11,7 +11,7 @@ def bubbleSort(array):
                 array[i] = array[i-1]
                 array[i-1] = temp
                 sorted = False
-avg = datetime.datetime.now()-datetime.datetime.now()
+sum = datetime.datetime.now()-datetime.datetime.now()
 print "start."
 for j in range(0,10):
     a=[]
@@ -20,6 +20,6 @@ for j in range(0,10):
     print "Unsorted:",a
     time1= datetime.datetime.now()
     bubbleSort(a)
-    avg = avg + (datetime.datetime.now()-time1)
+    sum = sum + (datetime.datetime.now()-time1)
     print "Sorted:",a
-print avg
+print sum, "for ten iterations"
